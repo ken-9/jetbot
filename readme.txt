@@ -9,3 +9,4 @@ jetpack:4.3
 pytorch:1.3.0
 cuda:10.0
 
+セットアップ参考 : https://www.waveshare.com/wiki/JetBot_AI_Kit
