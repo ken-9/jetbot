@@ -8,13 +8,13 @@ teleoperation       : 付属コントローラの設定関係
 [環境]
 $ jetson_release
  - NVIDIA Jetson NANO/TX1
-   * Jetpack UNKNOWN [L4T 32.7.2]  // unknownとなっているが4.6.2相当
+   * Jetpack 4.3 [L4T 32.3.1]
    * CUDA GPU architecture 5.3
  - Libraries:
-   * CUDA 10.2.300
-   * cuDNN 8.2.1.32-1+cuda10.2
-   * TensorRT 8.2.1.8-1+cuda10.2
-   * Visionworks 1.6.0.501
+   * CUDA 10.0.326
+   * cuDNN 7.6.3.28-1+cuda10.0
+   * TensorRT 6.0.1.10-1+cuda10.0
+   * Visionworks 1.6.0.500n
    * OpenCV 4.1.1 compiled CUDA: YES
  - Jetson Performance: inactive
 
@@ -26,3 +26,5 @@ $ jetson_release
 [セットアップ参考]
  - https://github.com/NVIDIA-AI-IOT/jetbot/wiki/software-setup
  - https://www.waveshare.com/wiki/JetBot_AI_Kit
+ 
+ 2022/08/08
