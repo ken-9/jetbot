@@ -19,12 +19,13 @@ $ jetson_release
  - Jetson Performance: inactive
 
  /* その他 */
- - python : 3.6.9
- - torch : 1.10.0
- - torchvision : 0.11.1
-
+ - python : 2.7.17 / 3.6.9
+ - torch : 1.3.0
+ - torchvision : 0.4.0a0+d31eafa
+ - tensorflow : '1.14.0'
+ - tensorRT : 6.0.1.10
 [セットアップ参考]
  - https://github.com/NVIDIA-AI-IOT/jetbot/wiki/software-setup
  - https://www.waveshare.com/wiki/JetBot_AI_Kit
  
- 2022/08/08
+ 2022/09/14
