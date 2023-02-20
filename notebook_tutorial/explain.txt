@@ -1,0 +1,16 @@
+# ディレクトリの説明
+notebook_tutorial/ :jetbotのサンプルプログラム群を入れてるディレクトリ
+ ┣ nvidia/ :nvidiaのgithub(https://github.com/NVIDIA-AI-IOT/jetbot)から持ってきたサンプルプログラム群
+ ┗ waveshare/ :waveshareのgithub(https://github.com/waveshare/jetbot)から持ってきたサンプルプログラム群
+ 
+# 各サンプルプログラムの説明
+basic_motion        : 基本的な動作
+collison_avoidvance : 衝突回避
+object_following    : 物体追跡
+road_following      : 道に沿って自律走行
+teleoperation       : 付属コントローラの設定関係
+
+各サンプルプログラムの詳細はgithubのwikiやドキュメントにも書いてあるので要参照
+> https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Examples
+> https://jetbot.org/master/examples/basic_motion.html
+> https://www.waveshare.com/wiki/JetBot_AI_Kit#User_Guides
