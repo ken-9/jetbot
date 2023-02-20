@@ -19,25 +19,26 @@ readme.md : 本リポジトリ全体に関わる説明(Jetbotのセットアッ�
 > https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Software-Setup#step-3---connect-jetbot-to-wifi
 
 4. JetbotのOLEDにIPアドレスが表示されるので，PCのブラウザからアクセスする 
-> https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Software-Setup#step-4---connect-to-jetbot-from-web-browser
+> https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Software-Setup#step-4---connect-to-jetbot-from-web-browser  
 ※PCは同ネットワークに接続しておく事．
 
 5. Jetbotに必要なソフトウェアをJetbotのリポジトリからインストールし，セットアップする
 > https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Software-Setup#step-5---install-latest-software-optional
-**Warning**
-> waveshareのJetbotは電力関係部分がNVIDIAと違うので，waveshareのリポジトリからgit clone する事．(以下参照)
 
-```
-$ git clone https://github.com/NVIDIA-AI-IOT/jetbot  # NVIDIAのリポジトリからgit clone
-↓ 
-$ git clone https://github.com/waveshare/jetbot  # waveshareのリポジトリからgit clone
-```
+> **Warning**  
+> waveshareのJetbotは電力関係部分がNVIDIAと違うので，waveshareのリポジトリからgit clone する事．(以下参照)
+> ```
+> $ git clone https://github.com/NVIDIA-AI-IOT/jetbot  # NVIDIAのリポジトリからgit clone
+> ↓ 
+> $ git clone https://github.com/waveshare/jetbot  # waveshareのリポジトリからgit clone
+> ```
 
 waveshare jetbotのwiki
 やり方が若干違うがこっちもあり
 > https://www.waveshare.com/wiki/JetBot_AI_Kit
 
 # 使用時環境
+```PowerShell
 $ jetson_release
  - NVIDIA Jetson NANO/TX1
    * Jetpack 4.3 [L4T 32.3.1]
@@ -49,18 +50,21 @@ $ jetson_release
    * Visionworks 1.6.0.500n
    * OpenCV 4.1.1 compiled CUDA: YES
  - Jetson Performance: inactive
+```
 
- /* その他 */
+その他
+```PowerShell
  - python : 2.7.17 / 3.6.9
  - torch : 1.3.0
  - torchvision : 0.4.0a0+d31eafa
  - tensorflow : '1.14.0'
  - tensorRT : 6.0.1.10
+```
 
 # その他ソフトウェアのセットアップ手順
 ## darknetの導入とyolov4-tinyのインストール
-物体検知機能を使う場合はdarknetの導入が必要(特にoriginal/rf_and_od.ipynb など)
-手順は以下．
+物体検知機能を使う場合はdarknetの導入が必要(特にoriginal/rf_and_od.ipynb など)  
+手順は以下．  
 1.フレームワークであるdarknetを入れる
 ```
 $ git clone https://github.com/AlexeyAB/darknet
@@ -106,5 +110,5 @@ $ ./darknet detect cfg/yolov4-tiny.cfg yolov4-tiny.weights data/dog.jpg
 ## torch2rtのインストール
 ライントレースの学習済みモデルをTensorRTに変換するプログラム('/notebook_tutorial/nvidia/road_following/live_demo_build_trt.ipynb')を使用する場合はtorch2rtのインストールが必要．
 以下に従ってインストールする．
-> https://github.com/NVIDIA-AI-IOT/torch2trt#setup
+> https://github.com/NVIDIA-AI-IOT/torch2trt#setup  
 ※不足してるパッケージがあれば適宜インストールする．
