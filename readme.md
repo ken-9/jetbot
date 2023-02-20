@@ -57,8 +57,8 @@ $ jetson_release
  - tensorflow : '1.14.0'
  - tensorRT : 6.0.1.10
 
-## その他ソフトウェアのセットアップ手順
-# darknetの導入とyolov4-tinyのインストール
+# その他ソフトウェアのセットアップ手順
+## darknetの導入とyolov4-tinyのインストール
 物体検知機能を使う場合はdarknetの導入が必要(特にoriginal/rf_and_od.ipynb など)
 手順は以下．
 1.フレームワークであるdarknetを入れる
@@ -103,7 +103,7 @@ makeをやり直す場合はmake clean してからmake
 $ ./darknet detect cfg/yolov4-tiny.cfg yolov4-tiny.weights data/dog.jpg
 ```
 
-# torch2rtのインストール
+## torch2rtのインストール
 ライントレースの学習済みモデルをTensorRTに変換するプログラム('/notebook_tutorial/nvidia/road_following/live_demo_build_trt.ipynb')を使用する場合はtorch2rtのインストールが必要．
 以下に従ってインストールする．
 > https://github.com/NVIDIA-AI-IOT/torch2trt#setup
